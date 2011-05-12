@@ -1,6 +1,3 @@
-require 'rubygems'
-
-
 module RedLine
 
 	autoload :Customer,     'redline/customer/base'
