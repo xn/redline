@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'active_record'
+
 
 module RedLine
 
@@ -20,5 +20,3 @@ module RedLine
 	end
 
 end
-
-ActiveRecord::Base.extend RedLine

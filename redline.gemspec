@@ -43,7 +43,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = %q{http://github.com/jamesdaniels/redline}
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
+  s.rubygems_version = %q{1.7.2}
   s.summary = %q{Syncs your AR models with Braintree (Payment Gateway) and offers a lightweight reoccurring billing script}
   s.test_files = [
     "spec/billing_spec.rb",
@@ -60,10 +60,11 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<rspec>, ["~> 1.2.9"])
-      s.add_development_dependency(%q<metric_fu>, ["~> 2.0.1"])
-      s.add_development_dependency(%q<sqlite3-ruby>, ["~> 1.3.1"])
-      s.add_runtime_dependency(%q<braintree>, ["~> 2.8.0"])
+      s.add_development_dependency(%q<rspec>, ["~> 1.3.1"])
+      s.add_development_dependency(%q<metric_fu>, ["~> 2.1.1"])
+      s.add_development_dependency(%q<sqlite3-ruby>, ["~> 1.3.3"])
+      s.add_development_dependency(%q<activerecord>, ["~> 2.3.11"])
+      s.add_runtime_dependency(%q<braintree>, ["~> 2.10.0"])
     else
       s.add_dependency(%q<rspec>, ["~> 1.2.9"])
       s.add_dependency(%q<metric_fu>, ["~> 2.0.1"])

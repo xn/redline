@@ -6,6 +6,10 @@ Icon*
 *.tmproj
 tmtags
 
+## REDCAR
+.redcar
+.redcar/**/*
+
 ## EMACS
 *~
 \#*
